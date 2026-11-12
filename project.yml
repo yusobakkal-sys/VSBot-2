@@ -1,0 +1,23 @@
+name: VSBot
+options:
+  bundleIdPrefix: com.zigzag
+  deploymentTarget:
+    iOS: "15.0"
+targets:
+  VSBot:
+    type: application
+    platform: iOS
+    sources:
+      - Sources
+      - path: Resources
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.zigzag.vsbot
+        PRODUCT_NAME: VSBot
+        INFOPLIST_KEY_CFBundleDisplayName: VSBot
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_VERSION: "5.0"
+        IPHONEOS_DEPLOYMENT_TARGET: "15.0"
+        GENERATE_INFOPLIST_FILE: YES
